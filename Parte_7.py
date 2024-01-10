@@ -1,10 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Cargar datos desde el archivo CSV
 df = pd.read_csv("datos_preparados.csv")
 
-# Graficar la distribución de edades con un histograma
 plt.figure(figsize=(8, 6))
 plt.hist(df['edad_categorizada'], bins=5, color='skyblue', edgecolor='black', alpha=0.7)
 plt.title('Distribución de Edades')
@@ -12,7 +10,7 @@ plt.xlabel('Edad Categorizada')
 plt.ylabel('Frecuencia')
 plt.show()
 
-# Graficar histogramas agrupados por hombre y mujer
+
 grupos = ['anaemia', 'diabetes', 'smoking', 'DEATH_EVENT']
 nombres_grupos = ['Anémicos', 'Diabéticos', 'Fumadores', 'Muertos']
 
